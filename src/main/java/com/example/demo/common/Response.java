@@ -1,4 +1,4 @@
-package com.demojpaapp.common;
+package com.example.demo.common;
 
 import java.io.Serializable;
 
@@ -34,5 +34,13 @@ public class Response implements Serializable {
 
     public void setError(String error) {
         this.error = error;
+    }
+
+    @Override
+    public String toString() {
+        return "Response{" +
+                "payload=" + payload +
+                ", error='" + error + '\'' +
+                '}';
     }
 }

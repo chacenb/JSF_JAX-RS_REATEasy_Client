@@ -7,7 +7,7 @@
         <packaging>war</packaging>
       </options>
     </properties>
-    <root id="archive" name="demoJpaJaxrsApi.war">
+    <root id="archive" name="demoJSFapp.war">
       <element id="artifact" artifact-name="demo:war exploded" />
     </root>
   </artifact>

@@ -1,7 +1,9 @@
 package com.demojpaapp.resource.ifaces;
 
-import com.demojpaapp.common.Response;
-import com.demojpaapp.entity.Employee;
+//import com.demojpaapp.common.Response;
+//import com.demojpaapp.entity.Employee;
+import com.example.demo.common.Response;
+import com.example.demo.entity.Employee;
 import jakarta.validation.Valid;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;

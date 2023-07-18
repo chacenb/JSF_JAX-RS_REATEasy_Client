@@ -5,74 +5,40 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
-    <artifactId>demojpaapp</artifactId>
+    <artifactId>demo</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>demojpaapp</name>
+    <name>demo</name>
     <packaging>war</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven.compiler.source>1.8</maven.compiler.source>
-        <junit.version>5.8.2</junit.version>
+        <!--        <junit.version>5.8.2</junit.version>-->
     </properties>
 
     <dependencies>
+        <!--        <dependency>-->
+        <!--            <groupId>jakarta.platform</groupId>-->
+        <!--            <artifactId>jakarta.jakartaee-api</artifactId>-->
+        <!--            <version>10.0.0</version>-->
+        <!--            <scope>provided</scope>-->
+        <!--            &lt;!&ndash; includes : jakarta.platform:jakarta.jakartaee-web-api:10, jakarta.faces:jakarta.faces-api:4.0.1, jakarta.servlet:jakarta.servlet-api:6.0 &ndash;&gt;-->
+        <!--        </dependency>-->
 
-<!--        <dependency>-->
-<!--            <groupId>org.springframework</groupId>-->
-<!--            <artifactId>spring-context</artifactId>-->
-<!--            <version>6.0.8</version>-->
-<!--        </dependency>-->
-
-        <dependency> <!-- handles Context and Dependency Injection (CDI) -->
-            <!-- includes : jakarta.enterprise.cdi-api, jakarta.ws.rs-api, jakarta.servlet-api -->
+        <dependency>
             <groupId>jakarta.platform</groupId>
-            <artifactId>jakarta.jakartaee-api</artifactId>
+            <artifactId>jakarta.jakartaee-web-api</artifactId>
             <version>10.0.0</version>
             <scope>provided</scope>
+            <!-- includes = jakarta.faces:jakarta.faces-api:4.0.1, jakarta.servlet:jakarta.servlet-api:6.0 -->
         </dependency>
 
-
-<!--        <dependency>-->
-<!--            <groupId>jakarta.enterprise</groupId>-->
-<!--            <artifactId>jakarta.enterprise.cdi-api</artifactId>-->
-<!--            <version>3.0.0</version>-->
-<!--            <scope>provided</scope>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>jakarta.ws.rs</groupId>-->
-<!--            <artifactId>jakarta.ws.rs-api</artifactId>-->
-<!--            <version>3.0.0</version>-->
-<!--            <scope>provided</scope>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>jakarta.servlet</groupId>-->
-<!--            <artifactId>jakarta.servlet-api</artifactId>-->
-<!--            <version>5.0.0</version>-->
-<!--            <scope>provided</scope>-->
-<!--        </dependency>-->
         <dependency>
-            <groupId>org.glassfish.jaxb</groupId>
-            <artifactId>jaxb-runtime</artifactId>
-            <version>3.0.2</version>
-        </dependency>
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-core-jakarta</artifactId>
-            <version>5.6.15.Final</version>
-        </dependency>
-
-<!--        <dependency>-->
-<!--            <groupId>org.glassfish.jaxb</groupId>-->
-<!--            <artifactId>jaxb-runtime</artifactId>-->
-<!--            <version>3.0.2</version>-->
-<!--        </dependency>-->
-
-        <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <version>42.5.4</version>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-client</artifactId>
+            <version>6.2.4.Final</version>
+            <scope>provided</scope>
         </dependency>
 
         <!-- log4j2 logger needed dependencies FOR SPRING -->
@@ -90,7 +56,7 @@
     </dependencies>
 
     <build>
-        <finalName>demoJpaJaxrsApi</finalName>
+        <finalName>demoJSFapp</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
