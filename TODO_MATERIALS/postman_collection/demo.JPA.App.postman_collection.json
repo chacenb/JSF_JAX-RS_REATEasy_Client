@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "faeb7ce7-61e6-45f6-bf11-ab5484aff670",
+		"name": "demo.JPA.App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/demojpaapp/api",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"demojpaapp",
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findAllEmployees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/demojpaapp/api/allEmployees",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"demojpaapp",
+						"api",
+						"allEmployees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create an Employe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\":\"Acz\",\r\n    \"lastName\":\"Borisz\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}/demojpaapp/api/createEmployee",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"demojpaapp",
+						"api",
+						"createEmployee"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
